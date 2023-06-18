@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavascriptBatch-1_L-56</title>
+        <style>
+
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <h1>Functions Returning Value</h1>
+        
+
+        <script>
+            //1. Function Defination
+            //Proper Naming Convention
+            // i.e Function Name are always in camelCase
+
+            //1.function define is one time process
+            function myFunctionA(x,y){ //formal argument/parameter
+                //function body
+                return x+y; //statements
+            }
+            //function may return something
+            //2. function calling/invoking , call/invoke is many time process
+            let result = myFunctionA(10,30); //actual argument/parameters
+            
+            console.log(result); //instructions/statements
+
+            //function as argument
+
+            let r2 = myFunctionA(10,myFunctionA(10,30));
+
+            console.log(r2);
+
+            //Actual argument/parameter be a
+            //1. Integer 
+            //2. Float/Double
+            //3. String
+
+            function a(){
+                return 10;
+            }
+
+            function b(){
+                return 20; 
+            }
+
+            function c(x,y){
+                return x+y;
+            }
+
+            //function as a argument
+            let z =c(a(),b());
+
+            console.log(z); //here answer is 30;
+
+        </script>
+    </body>
+</html>
